@@ -1,0 +1,154 @@
+/* Genel Gövde Stili */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;  /* Daha açık ve profesyonel bir arka plan rengi */
+    color: #333;
+}
+
+/* Başlık ve Navigasyon Stili */
+header {
+    background-color: #2c3e50;  /* Daha koyu bir ton, profesyonel görünüm */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölgelendirme */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;  /* Başlık boyutunu büyüttüm */
+}
+
+/* Navigasyon Menüsü */
+nav {
+    background-color: #34495e;  /* Düzgün ve şık bir renk tonuyla arka plan */
+    padding: 10px 0;  /* Üst ve alt padding ekleyerek daha fazla boşluk sağladım */
+    text-align: center;  /* Menü bağlantılarını merkeze hizaladım */
+}
+
+/* Navigasyon Listesi */
+nav ul {
+    list-style: none;  /* Liste noktalarını kaldırdım */
+    padding: 0;
+    margin: 0;
+    display: flex;  /* Flexbox düzeni ile öğeleri yatayda hizaladım */
+    justify-content: center;  /* Menü öğelerini yatayda ortaladım */
+}
+
+/* Menü Öğeleri */
+nav ul li {
+    margin: 0 20px;  /* Öğeler arasına sağ ve sol boşluk ekledim */
+    display: inline-block;  /* Her öğenin blok gibi görünmesini sağladım */
+}
+
+/* Bağlantı Stili */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;  /* Bağlantılara iç boşluk ekleyerek tıklanabilir alanı genişlettim */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Ana İçerik Konteyneri */
+.container {
+    max-width: 1000px;  /* Genişlik biraz daha artırıldı */
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Gölgeleme etkisini artırdım */
+}
+
+/* Bölüm Başlıkları */
+h2, h3 {
+    color: #2c3e50;
+    font-size: 24px;  /* Başlık boyutları daha belirgin */
+    margin-bottom: 15px;
+}
+
+/* İletişim Bilgileri */
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* İletişim Bilgisi Başlığı */
+.contact-info li strong {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Dosya Yükleme Alanı */
+.file-upload {
+    border: 2px dashed #34495e;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload label {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #34495e;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.file-upload label:hover {
+    background-color: #2c3e50;
+}
+
+/* Responsive Destek */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .container {
+        width: 90%;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
